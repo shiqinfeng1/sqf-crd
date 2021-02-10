@@ -1,0 +1,11 @@
+domain: sqf.io
+layout: go.kubebuilder.io/v3
+projectName: sqf-crd
+repo: sqf-crd
+resources:
+- api:
+    crdVersion: v1
+  group: staight
+  kind: Alpine
+  version: v1
+version: 3-alpha

@@ -1,0 +1,24 @@
+# permissions for end users to edit alpines.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: alpine-editor-role
+rules:
+- apiGroups:
+  - staight.sqf.io
+  resources:
+  - alpines
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - staight.sqf.io
+  resources:
+  - alpines/status
+  verbs:
+  - get

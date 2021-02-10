@@ -1,0 +1,7 @@
+apiVersion: staight.sqf.io/v1
+kind: Alpine
+metadata:
+  name: alpine-sample
+spec:
+  # Add fields here
+  foo: bar
